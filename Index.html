@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jessica Brooks</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="./Style.css" />
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="heading">
+            <div class="logo">
+                <h1>Jessica Brooks</h1>
+                <a href="#">Home Styling Design</a>
+            </div>
+            <div class="menu">
+                <ul id="menu-items">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Book Online</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <i class="fas fa-user-circle"></i>
+                    <li id="Login"><a href="#">Log In</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="mainSection">
+            <div class="parallax-window" data-parallax="scroll" data-image-src="./Images/Background.png"></div>
+            <div class="Home">
+                <div class="Brand-name">
+                <h1>Jessica Brooks Home Styling</h1>
+                <p>Be Bold. Design Your Life</p>
+                </div>
+            </div>
+            <div class="projects">
+                <h6>My Projects</h6>
+                <div class="grid">
+                    <div class="grid-item"><img src="./Images/Image1.jpg" /></div>
+                    <div class="grid-item"><img src="./Images/Image2.jpg" /></div>
+                    <div class="grid-item"><img src="./Images/Image3.jpg" /></div>
+                    <div class="grid-item"><img src="./Images/Image4.jpg" /></div>
+                    <div class="grid-item"><img src="./Images/Image5.jpg" /></div>
+                    <div class="grid-item"><img src="./Images/Image6.jpg" /></div>
+                    <div class="grid-item"><img src="./Images/Image7.jpg" /></div>
+                    <div class="grid-item"><img src="./Images/Image8.jpg" /></div>
+                    <div class="grid-item"><img src="./Images/Image9.jpg" /></div>
+                    <div class="grid-item"><img src="./Images/Image10.jpg" /></div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <script src="./Index.js"></script>
+    <script>
+        $('.grid').masonry({
+    itemSelector: '.grid-item',
+    columnWidth: 100,
+  });
+    </script>
+</body>
+</html>
