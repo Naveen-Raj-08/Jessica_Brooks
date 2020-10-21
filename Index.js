@@ -4,9 +4,7 @@ var msnry = new Masonry( elem, {
   itemSelector: '.grid-item',
   columnWidth: 120,
   fitWidth: true,
-  horizontalOrder: true,
-  stagger: 30,
-  transitionDuration: '0.8s'
+  horizontalOrder: true
 });
 
 

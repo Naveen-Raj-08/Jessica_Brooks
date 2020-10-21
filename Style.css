@@ -234,7 +234,12 @@ input[type="email"] {
 }
 
 @media screen and (max-width: 480px) {
-  .parallax {
-    height: 300px;
+  .container-fluid {
+    max-width: 100%;
+    width: 100%;
+  }
+  .parallax-window {
+    margin-right: -50%;
+    margin-left: -50%;
   }
 }
