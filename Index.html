@@ -9,7 +9,23 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            
+
+
     <link rel="stylesheet" href="./Style.css" />
 </head>
 <body>
@@ -41,27 +57,121 @@
             <div class="projects">
                 <h6>My Projects</h6>
                 <div class="grid">
-                    <div class="grid-item"><img src="./Images/Image1.jpg" /></div>
-                    <div class="grid-item"><img src="./Images/Image2.jpg" /></div>
-                    <div class="grid-item"><img src="./Images/Image3.jpg" /></div>
-                    <div class="grid-item"><img src="./Images/Image4.jpg" /></div>
-                    <div class="grid-item"><img src="./Images/Image5.jpg" /></div>
-                    <div class="grid-item"><img src="./Images/Image6.jpg" /></div>
-                    <div class="grid-item"><img src="./Images/Image7.jpg" /></div>
-                    <div class="grid-item"><img src="./Images/Image8.jpg" /></div>
-                    <div class="grid-item"><img src="./Images/Image9.jpg" /></div>
-                    <div class="grid-item"><img src="./Images/Image10.jpg" /></div>
+                    <div class="grid-item">
+                      <img src="./Images/Image1.jpg" alt="design" id="myImg"/>
+                       <div id="myModal" class="modal">
+                             <span class="close">&times;</span>
+                           <div id="img01">
+                             <img src="./Images/Background.png" style="width: 100%; max-width: 300px;" />
+                           </div>
+                          <div id="caption">
+                            <h1>My Design<br/>Philosophy</h1>
+                            <p>I'm a paragraph. Click here to add your own text and edit me. It’s<br/>
+                             easy. Just click “Edit Text” or double click me to add your own content <br/>
+                             and make changes to the font.</p>
+                          </div>
+                     </div>
+                    </div>
+                    <div class="grid-item"><img src="./Images/Image4.jpg" alt="design1" id="image2"/></div>
+                    <div class="grid-item"><img src="./Images/Image2.jpg" alt="design2" id="image2"/></div>
+                    <div class="grid-item"><img src="./Images/Image3.jpg" alt="design3" id="image2"/></div>
+                    <div class="grid-item"><img src="./Images/Image6.jpg" alt="design4" id="image2"/></div>
+                    <div class="grid-item"><img src="./Images/Image7.jpg" alt="design5" id="image2"/></div>
+                    <div class="grid-item"><img src="./Images/Image8.jpg" alt="design6" id="image2"/></div>
+                    <div class="grid-item"><img src="./Images/Image9.jpg" alt="design7" id="image2"/></div>
+                    <div class="grid-item"><img src="./Images/Image10.jpg" alt="design8" id="image2"/></div>
                 </div>
             </div>
+            <div class="philosophy">
+                <div class="message">
+                    <h6>My Design<br/>Philosophy</h6>
+                    <p>I'm a paragraph. Click here to add your own text and edit me. It’s<br/>
+                     easy. Just click “Edit Text” or double click me to add your own content <br/>
+                     and make changes to the font.</p>
+                     <button>Learn More</button>
+                </div>
+                <div class="designer">
+                    <img src="./Images//Designer.jpg" style="width: 600px; height: auto;" alt="designing" />
+                </div>
             </div>
-        </div>
-    </div>
+            <div class="container">
+                <h6>My Services</h6> 
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                      <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <li data-target="#myCarousel" data-slide-to="3"></li>
+                        <li data-target="#myCarousel" data-slide-to="4"></li>
+                      </ol>
+                      <div class="carousel-inner" role="listbox">
+                          <div class="item active">
+                          <img src="./Images/Carousel1.png" alt="Interior-design-sevice" width="100%" />
+                          <div class="carousel-caption">
+                            <h2>Hall Designing</h2>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <img src="./Images/Carousel2.jpg" alt="Interior-design-sevice-2" width="100%" />
+                          <div class="carousel-caption">
+                            <h2>Interior Stairs</h2>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <img src="./Images/Carousel3.jpg" alt="Interior-design-sevice-3" width="100%" />
+                          <div class="carousel-caption">
+                            <h2>Bathroom Designing</h2>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <img src="./Images/Carousel4.jpg" alt="Interior-design-sevice-4" width="100%" />
+                          <div class="carousel-caption">
+                            <h2>Wall Designing</h2>
+                          </div>
+                        </div>
+                        <div class="item">
+                            <img src="./Images/Carousel5.jpg" alt="Interior-design-sevice-5" width="100%" />
+                            <div class="carousel-caption">
+                              <h2>Ceiling Designing</h2>
+                            </div>
+                          </div>
+                      </div>
+                      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
+                  </div>                
+            </div>
+            <div class="footer">
+              <div class="subscribe-form">
+                  <h6>Subscribe for Updates</h6>
+                  <form>
+                    <label for="name">
+                      <i class="material-icons prefix">account_circle</i>
+                    </label>
+                    <input type="text" placeholder="Name" name="name" style="width: 400px"/>
+                    <label for="Email">
+                      <i class="material-icons prefix">email</i>
+                    </label>
+                    <input type="email" placeholder="Email Address" name="Email" style="width: 400px"/>
+                    <button type="submit">Sign Up</button>
+                  </form>
+              </div>
+                <div class="social">
+                  <a href="#"><i class="fa fa-facebook-f" style="font-size:20px"></i></a>
+                  <a href="#"><i class="fa fa-twitter" style="font-size:20px"></i></a>
+                  <a href="#"><i class="fa fa-linkedin" style="font-size:20px"></i></a>
+                </div>
+                <div class="rights">
+                  <p>&copy; 2023 by Jessica Brooks.</p>
+                </div>
+            </div>
+      </div>
     <script src="./Index.js"></script>
-    <script>
-        $('.grid').masonry({
-    itemSelector: '.grid-item',
-    columnWidth: 100,
-  });
-    </script>
 </body>
 </html>

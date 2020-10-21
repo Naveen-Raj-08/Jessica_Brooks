@@ -27,8 +27,8 @@
   margin: 10px 20px;
   font-family: helvetica;
   position: absolute;
+  top: 50px;
   right: 10px;
-  top: 20px;
 }
 .heading > .menu > #menu-items {
   list-style: none;
@@ -92,15 +92,161 @@
 }
 .projects > h6 {
   font-size: 40px;
-  padding: 5px 5px;
+  padding: 10px 10px;
+  margin-bottom: 50px;
   font-weight: bold;
 }
 .grid {
-  max-width: 100vw;
+  width: 100%;
   text-align: center;
 }
-.grid-item img {
+.grid-item > img {
   width: 400px;
-  padding: 30px 30px;
-  height: 400px;
+  padding: 20px 40px;
+  transition: 1s ease-in;
+  backface-visibility: hidden;
+}
+.grid-item > img:hover {
+  opacity: 0.4;
+}
+
+.philosophy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px 10px;
+  font-family: helvetica;
+}
+.philosophy > .message {
+  padding: 10px 10px;
+  text-align: left;
+  margin-left: -20px;
+}
+.philosophy > .message > h6 {
+  padding-bottom: 20px;
+  font-size: 40px;
+  font-weight: 700;
+}
+.philosophy > .message > p {
+  font-size: 15px;
+  margin-right: 40px;
+  font-weight: 500;
+}
+.philosophy > .message > button {
+  box-sizing: border-box;
+  padding: 10px 20px;
+  margin-top: 40px;
+  font-size: 15px;
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+}
+.philosophy > .message > button:hover {
+  color: white;
+  transition: 0.7s ease;
+  background-color: black;
+}
+.philosophy > .designer {
+  padding: 5px 5px;
+  margin: 5px 5px;
+  margin-right: -20px;
+}
+.philosophy > .designer > img {
+  margin-right: 0px;
+}
+.container {
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+.container > h6 {
+  padding: 10px 10px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 90px;
+}
+.container > img {
+  opacity: 0.7;
+}
+.modal {
+  padding: 20px 20px;
+  margin: 20px 20px;
+  text-align: center;
+  width: auto;
+  height: auto;
+  background-color: white;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer {
+  display: block;
+  text-align: center;
+  padding: 20px 20px;
+  margin: 30px 30px;
+  margin-top: 90px;
+  font-family: helvetica;
+}
+.footer > .subscribe-form {
+  padding: 10px 10px;
+  font-family: helvetica;
+}
+.footer > .subscribe-form > form {
+  margin-top: 50px;
+  padding: 10px 10px;
+}
+.footer > .subscribe-form > h6 {
+  font-size: 40px;
+  font-weight: bold;
+}
+.footer > .subscribe-form > form > input[type="text"],
+input[type="email"] {
+  color: black;
+  margin: 10px 10px;
+}
+.footer > .subscribe-form > form > button {
+  box-sizing: border-box;
+  padding: 10px 20px;
+  font-size: 15px;
+  margin: 10px 10px;
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+}
+.footer > .subscribe-form > form > button:hover {
+  color: white;
+  transition: 0.7s ease;
+  background-color: black;
+}
+.footer > .social {
+  padding: 20px 20px;
+  margin-top: 70px;
+}
+.footer > .social > a {
+  color: black;
+  margin: 5px 10px;
+}
+.footer > .rights {
+  padding: 10px 10px;
+  margin: 10px 10px;
+}
+
+@media screen and (max-width: 480px) {
+  .heading > .menu {
+    display: none;
+  }
+  .mainSection {
+    width: 100%;
+    height: auto;
+    padding: 0%;
+    padding: 0%;
+  }
+  .mainSection > .parallax-window {
+    width: 100%;
+    height: auto;
+    margin: 0%;
+    padding: 0%;
+  }
 }
