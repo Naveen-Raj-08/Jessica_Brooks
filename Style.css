@@ -234,34 +234,7 @@ input[type="email"] {
 }
 
 @media screen and (max-width: 480px) {
-  .container-fluid {
-    width: 100%;
-    height: auto;
-    padding: 0;
-    margin: 0;
-    display: block;
-  }
-  .heading > .logo {
-    margin: 0;
-    padding: 0;
-  }
-
-  .heading > .logo > h1 {
-    color: red;
-    text-align: center;
-  }
-  .heading > .menu {
-    display: none;
-  }
-  .mainSection {
-    width: 100%;
-    height: auto;
-    padding: 0%;
-    padding: 0%;
-    border: 1px solid gray;
-  }
-  .mainSection > .parallax-window {
-    width: auto;
-    height: 400px;
+  .parallax {
+    height: 300px;
   }
 }
