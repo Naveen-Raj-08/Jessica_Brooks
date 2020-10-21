@@ -279,13 +279,36 @@ input[type="email"] {
   }
   .projects {
     margin-right: -45%;
-    border: 1px solid black;
   }
   .projects > h6 {
     text-align: center;
   }
   .grid > .grid-item > img {
-    max-width: 100%;
+    width: -50%;
     height: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 0;
+  }
+  .philosophy {
+    margin-right: -45%;
+    display: block;
+  }
+  .philosophy > .message {
+    position: relative;
+    left: 25%;
+  }
+  .philosophy > .message h6 {
+    text-align: center;
+    font-size: 32px;
+  }
+  .philosophy > .message > p {
+    text-align: center;
+    font-size: 14px;
+  }
+  .philosophy > .message > button {
+    text-align: center;
+    position: relative;
+    left: 34%;
   }
 }
