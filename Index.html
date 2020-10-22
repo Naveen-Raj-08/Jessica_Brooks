@@ -10,14 +10,13 @@
     <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-  
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
@@ -35,8 +34,8 @@
                 <h1>Jessica Brooks</h1>
                 <a href="#">Home Styling Design</a>
             </div>
-            <div class="menu">
-                <ul id="menu-items">
+            <div class="menu">            
+              <ul id="menu-items">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Book Online</a></li>
                     <li><a href="#">About</a></li>
@@ -44,7 +43,27 @@
                     <i class="fas fa-user-circle"></i>
                     <li id="Login"><a href="#">Log In</a></li>
                 </ul>
-            </div>
+                <div class="menu-modal-message">
+                  <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Menu</button>
+  
+                  <div id="id01" class="w3-modal">
+                  <div id="card" class="w3-modal-content w3-animate-top w3-card-4">
+                    <header class="w3-container w3-black"> 
+                        <a href="#"><i class="fas fa-user-circle"></i>  LOG IN </a>
+                        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                    </header>
+                    <div class="w3-container">
+                        <ul id="menu-items">
+                          <li><a href="#">Home</a></li>
+                          <li><a href="#">Book Online</a></li>
+                          <li><a href="#">About</a></li>
+                          <li><a href="#">Contact</a></li>
+                      </ul>
+                     </div>
+                    </div>
+                  </div>  
+              </div>
+              </div>
         </div>
         <div class="mainSection">
             <div class="parallax-window" data-parallax="scroll" data-image-src="./Images/Background.png"></div>
@@ -59,7 +78,7 @@
                 <div class="grid">
                     <div class="grid-item">
                       <img src="./Images/Image1.jpg" alt="design" id="myImg"/>
-                        <div id="myModal" class="modal">
+                        <!-- <div id="myModal" class="modal">
                              <span class="close">&times;</span>
                           <div id="caption">
                             <h1>My Design<br/>Philosophy</h1>
@@ -70,7 +89,7 @@
                           <div id="img01"> 
                              <img src="./Images/Background.png" style="max-width: 800px; width: 100%; height: auto;" />
                            </div>
-                     </div>
+                     </div> -->
                     </div>
                     <div class="grid-item"><img src="./Images/Image4.jpg" alt="design1" id="image2"/></div>
                     <div class="grid-item"><img src="./Images/Image2.jpg" alt="design2" id="image2"/></div>
@@ -163,9 +182,9 @@
                   </form>
               </div>
                 <div class="social">
-                  <a href="#"><i class="fa fa-facebook-f" style="font-size:20px"></i></a>
-                  <a href="#"><i class="fa fa-twitter" style="font-size:20px"></i></a>
-                  <a href="#"><i class="fa fa-linkedin" style="font-size:20px"></i></a>
+                  <a href="#"><i class='fab fa-facebook-f' style='font-size:20px'></i></a>
+                  <a href="#"><i class="fab fa-twitter" style="font-size:20px"></i></a>
+                  <a href="#"><i class="fab fa-linkedin" style="font-size:20px"></i></a>
                 </div>
                 <div class="rights">
                   <p>&copy; 2023 by Jessica Brooks.</p>

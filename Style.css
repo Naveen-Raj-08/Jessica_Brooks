@@ -14,7 +14,7 @@
 }
 .heading > .logo > h1 {
   font-size: 22px;
-  font-weight: 100;
+  font-weight: 500;
   margin-bottom: 5px;
 }
 .heading > .logo > a {
@@ -24,12 +24,14 @@
 }
 .heading > .menu {
   padding: 10px 10px;
-  margin: 10px 20px;
+  margin: 5px 5px;
   font-family: helvetica;
   position: absolute;
   top: 50px;
-  right: 10px;
+  float: right;
+  right: 30px;
 }
+
 .heading > .menu > #menu-items {
   list-style: none;
   margin: 0;
@@ -56,7 +58,9 @@
 .heading > .menu > #menu-items > li > a:hover {
   text-decoration: none;
 }
-
+.heading .menu-modal-message {
+  display: none;
+}
 .parallax-window {
   margin-left: 30px;
   margin-right: 30px;
@@ -101,9 +105,6 @@
   text-align: center;
 }
 
-.grid > .modal::after {
-  display: flex;
-}
 .grid-item > img {
   width: 400px;
   padding: 20px 40px;
@@ -235,4 +236,63 @@ input[type="email"] {
 .footer > .rights {
   padding: 10px 10px;
   margin: 10px 10px;
+}
+
+@media screen and (orientation: portrait) {
+  .container-fluid {
+    width: fit-content;
+    border: 1px solid black;
+  }
+  .container-fluid > .heading {
+    padding-top: 20px;
+    margin: 5px 5px;
+  }
+  .container-fluid > .heading > .logo {
+    position: relative;
+    left: 30%;
+  }
+  .menu {
+    display: block;
+    padding: 5px 5px;
+    margin: 2px 3px;
+  }
+  .menu > #menu-items {
+    display: none;
+  }
+  .menu > .menu-modal-message {
+    display: block;
+    position: relative;
+  }
+  .w3-modal {
+    margin-top: 10%;
+    height: auto;
+    background: transparent;
+  }
+  .w3-modal > #card > header {
+    padding: 10px 10px;
+    text-align: center;
+  }
+  .w3-modal > #card > header > span {
+    font-size: 26px;
+  }
+  .w3-modal > #card > header > a {
+    font-size: 26px;
+    padding: 10px 20px;
+    color: white;
+  }
+  .w3-modal > #card > header > a:hover {
+    text-decoration: none;
+  }
+  .w3-modal > #card > .w3-container {
+    text-align: center;
+    font-size: medium;
+    padding: 10px 10px;
+  }
+  .w3-modal > #card > .w3-container > ul > li > a {
+    color: black;
+    font-size: 15px;
+  }
+  .w3-modal > #card > .w3-container > ul > li > a:hover {
+    text-decoration: none;
+  }
 }

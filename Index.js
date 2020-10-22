@@ -8,20 +8,20 @@ var msnry = new Masonry( elem, {
 });
 
 
-var modal = document.getElementById("myModal");
-var img = document.getElementById("myImg");
-var modalImg = document.getElementById("img01");
+// var modal = document.getElementById("myModal");
+// var img = document.getElementById("myImg");
+// var modalImg = document.getElementById("img01");
 
-var captionText = document.getElementById("caption");
+// var captionText = document.getElementById("caption");
 
-img.onclick = function(){
-  modal.style.display = "flex";
-  captionText = modalImg;
-  modalImg = img;
-}
+// img.onclick = function(){
+//   modal.style.display = "flex";
+//   captionText = modalImg;
+//   modalImg = img;
+// }
 
-var span = document.getElementsByClassName("close")[0];
+// var span = document.getElementsByClassName("close")[0];
 
-span.onclick = function() { 
-  modal.style.display = "none";
-}
+// span.onclick = function() { 
+//   modal.style.display = "none";
+// }
