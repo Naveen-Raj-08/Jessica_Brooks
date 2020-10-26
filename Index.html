@@ -4,44 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jessica Brooks</title>
+
+    <!--Bootstrap Plugin-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    
+    <!--Google Material Icons plugin-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--Parallax Scrolling effect Plugin-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+
+    <!--Masonry Grid Plugin-->
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!--Carousel Plugin-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- Fontaswesome and W3 School plugin-->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-            
-
-
-    <link rel="stylesheet" href="./Style.css" />
+    
+    <!-- External Stylesheet-->
+    <link rel="stylesheet" href="./CSS/Style.css" />
 </head>
 <body>
     <div class="container-fluid">
         <div class="heading">
             <div class="logo">
                 <h1>Jessica Brooks</h1>
-                <a href="#">Home Styling Design</a>
+                <a href="./Index.html">Home Styling Design</a>
             </div>
             <div class="menu">            
               <ul id="menu-items">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Book Online</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="./Index.html">Home</a></li>
+                    <li><a href="./Booking.html">Book Online</a></li>
+                    <li><a href="./About.html">About</a></li>
+                    <li><a href="./Contact.html">Contact</a></li>
                     <i class="fas fa-user-circle"></i>
-                    <li id="Login"><a href="#">Log In</a></li>
+                    <li id="Login"><a href="./Login.html">Log In</a></li>
                 </ul>
                 <div class="menu-modal-message">
                   <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Menu</button>
@@ -54,8 +63,8 @@
                     </header>
                     <div class="w3-container">
                         <ul id="menu-items">
-                          <li><a href="#">Home</a></li>
-                          <li><a href="#">Book Online</a></li>
+                          <li><a href="./Index.html">Home</a></li>
+                          <li><a href="./Booking.html">Book Online</a></li>
                           <li><a href="#">About</a></li>
                           <li><a href="#">Contact</a></li>
                       </ul>
@@ -66,6 +75,9 @@
               </div>
         </div>
         <div class="mainSection">
+
+          <!--Parallax Scrolling Effect-->
+
             <div class="parallax-window" data-parallax="scroll" data-image-src="./Images/Background.png"></div>
             <div class="Home">
                 <div class="Brand-name">
@@ -73,32 +85,203 @@
                 <p>Be Bold. Design Your Life</p>
                 </div>
             </div>
+
+            <!--Masonry Grid layout-->
+            
             <div class="projects">
                 <h6>My Projects</h6>
                 <div class="grid">
                     <div class="grid-item">
-                      <img src="./Images/Image1.jpg" alt="design" id="myImg"/>
-                        <!-- <div id="myModal" class="modal">
-                             <span class="close">&times;</span>
-                          <div id="caption">
-                            <h1>My Design<br/>Philosophy</h1>
-                            <p>I'm a paragraph. Click here to add your own text and edit me. It’s<br/>
-                             easy. Just click “Edit Text” or double click me to add your own content <br/>
-                             and make changes to the font.</p>
+                      <img src="./Images/Image1.jpg" alt="home interior" onclick="document.getElementById('project01').style.display='inline-block'"/>
+                      
+                      <div id="project01" class="w3-modal">
+                        <div id="myProject" class="w3-modal-content w3-animate-zoom ">
+                              <span onclick="document.getElementById('project01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                          <div class="w3-container">
+                              <div class="message">
+                                <h6>Ceiling Decoration</h6>
+                                  <p>I'm a paragraph. Click here to add your own text and edit me. It’s
+                                    easy. Just click “Edit Text” or double click me to add your own content
+                                    and make changes to the font.</p>
+                              </div>
+                              <div class="project">
+                                <img src="Images/Image1.jpg" style="width: 400px;"/>
+                              </div>
                           </div>
-                          <div id="img01"> 
-                             <img src="./Images/Background.png" style="max-width: 800px; width: 100%; height: auto;" />
-                           </div>
-                     </div> -->
+                        </div>
+                      </div>  
+                    
                     </div>
-                    <div class="grid-item"><img src="./Images/Image4.jpg" alt="design1" id="image2"/></div>
-                    <div class="grid-item"><img src="./Images/Image2.jpg" alt="design2" id="image2"/></div>
-                    <div class="grid-item"><img src="./Images/Image3.jpg" alt="design3" id="image2"/></div>
-                    <div class="grid-item"><img src="./Images/Image6.jpg" alt="design4" id="image2"/></div>
-                    <div class="grid-item"><img src="./Images/Image7.jpg" alt="design5" id="image2"/></div>
-                    <div class="grid-item"><img src="./Images/Image8.jpg" alt="design6" id="image2"/></div>
-                    <div class="grid-item"><img src="./Images/Image9.jpg" alt="design7" id="image2"/></div>
-                    <div class="grid-item"><img src="./Images/Image10.jpg" alt="design8" id="image2"/></div>
+                    <div class="grid-item">
+                      <img src="./Images/Image4.jpg" alt="bedroom" onclick="document.getElementById('project02').style.display='inline-block'">
+
+                      <div id="project02" class="w3-modal">
+                        <div id="myProject" class="w3-modal-content w3-animate-zoom ">
+                              <span onclick="document.getElementById('project02').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                          <div class="w3-container">
+                              <div class="message">
+                                <h6>Bedroom Decoration</h6>
+                                  <p>I'm a paragraph. Click here to add your own text and edit me. It’s
+                                    easy. Just click “Edit Text” or double click me to add your own content
+                                    and make changes to the font.</p>
+                              </div>
+                              <div class="project">
+                                <img src="Images/Image4.jpg" style="width: 500px;"/>
+                              </div>
+                          </div>
+                        </div>
+                      </div> 
+                    
+                  </div>
+                    <div class="grid-item">
+                      <img src="./Images/Image2.jpg" alt="Relax" onclick="document.getElementById('project03').style.display='inline-block'">
+
+                      <div id="project03" class="w3-modal">
+                        <div id="myProject" class="w3-modal-content w3-animate-zoom ">
+                              <span onclick="document.getElementById('project03').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                          <div class="w3-container">
+                              <div class="message">
+                                <h6>Interior Decoration</h6>
+                                  <p>I'm a paragraph. Click here to add your own text and edit me. It’s
+                                    easy. Just click “Edit Text” or double click me to add your own content
+                                    and make changes to the font.</p>
+                              </div>
+                              <div class="project">
+                                <img src="Images/Image2.jpg" style="width: 500px;"/>
+                              </div>
+                          </div>
+                        </div>
+                      </div>    
+
+                    </div>
+                    <div class="grid-item">
+                      <img src="./Images/Image3.jpg" alt="workplace" onclick="document.getElementById('project04').style.display='inline-block'" />
+
+                      <div id="project04" class="w3-modal">
+                        <div id="myProject" class="w3-modal-content w3-animate-zoom ">
+                              <span onclick="document.getElementById('project04').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                          <div class="w3-container">
+                              <div class="message">
+                                <h6>Workplace Decoration</h6>
+                                  <p>I'm a paragraph. Click here to add your own text and edit me. It’s
+                                    easy. Just click “Edit Text” or double click me to add your own content
+                                    and make changes to the font.</p>
+                              </div>
+                              <div class="project">
+                                <img src="Images/Image3.jpg" style="width: 500px;"/>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                    
+                    </div>
+                    <div class="grid-item">
+                      <img src="./Images/Image6.jpg" alt="coffee-table" onclick="document.getElementById('project05').style.display='inline-block'"/>
+
+                      <div id="project05" class="w3-modal">
+                        <div id="myProject" class="w3-modal-content w3-animate-zoom ">
+                              <span onclick="document.getElementById('project05').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                          <div class="w3-container">
+                              <div class="message">
+                                <h6>Coffee Table Decoration</h6>
+                                  <p>I'm a paragraph. Click here to add your own text and edit me. It’s
+                                    easy. Just click “Edit Text” or double click me to add your own content
+                                    and make changes to the font.</p>
+                              </div>
+                              <div class="project">
+                                <img src="Images/Image6.jpg" style="width: 500px;"/>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="grid-item">
+                      <img src="./Images/Image7.jpg" alt="wall-design" onclick="document.getElementById('project06').style.display='inline-block'"/>
+
+                      <div id="project06" class="w3-modal">
+                        <div id="myProject" class="w3-modal-content w3-animate-zoom ">
+                              <span onclick="document.getElementById('project06').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                          <div class="w3-container">
+                              <div class="message">
+                                <h6>Wall Designing</h6>
+                                  <p>I'm a paragraph. Click here to add your own text and edit me. It’s
+                                    easy. Just click “Edit Text” or double click me to add your own content
+                                    and make changes to the font.</p>
+                              </div>
+                              <div class="project">
+                                <img src="Images/Image7.jpg" style="width: 500px;"/>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="grid-item">
+                      <img src="./Images/Image8.jpg" alt="bathroom"  onclick="document.getElementById('project07').style.display='inline-block'"/>
+
+
+                      <div id="project07" class="w3-modal">
+                        <div id="myProject" class="w3-modal-content w3-animate-zoom ">
+                              <span onclick="document.getElementById('project07').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                          <div class="w3-container">
+                              <div class="message">
+                                <h6>Bathroom Decoration</h6>
+                                  <p>I'm a paragraph. Click here to add your own text and edit me. It’s
+                                    easy. Just click “Edit Text” or double click me to add your own content
+                                    and make changes to the font.</p>
+                              </div>
+                              <div class="project">
+                                <img src="Images/Image8.jpg" style="width: 500px;"/>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                    
+                    </div>
+                    <div class="grid-item">
+                      <img src="./Images/Image9.jpg" alt="Kitchen"  onclick="document.getElementById('project08').style.display='inline-block'"/>
+
+                      <div id="project08" class="w3-modal">
+                        <div id="myProject" class="w3-modal-content w3-animate-zoom ">
+                              <span onclick="document.getElementById('project08').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                          <div class="w3-container">
+                              <div class="message">
+                                <h6>Kitchen Designing</h6>
+                                  <p>I'm a paragraph. Click here to add your own text and edit me. It’s
+                                    easy. Just click “Edit Text” or double click me to add your own content
+                                    and make changes to the font.</p>
+                              </div>
+                              <div class="project">
+                                <img src="Images/Image9.jpg" style="width: 500px;"/>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="grid-item">
+                      <img src="./Images/Image10.jpg" alt="ceiling"  onclick="document.getElementById('project09').style.display='inline-block'" />
+
+                      <div id="project09" class="w3-modal">
+                        <div id="myProject" class="w3-modal-content w3-animate-zoom ">
+                              <span onclick="document.getElementById('project09').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                          <div class="w3-container">
+                              <div class="message">
+                                <h6>Ceiling Designing</h6>
+                                  <p>I'm a paragraph. Click here to add your own text and edit me. It’s
+                                    easy. Just click “Edit Text” or double click me to add your own content
+                                    and make changes to the font.</p>
+                              </div>
+                              <div class="project">
+                                <img src="Images/Image10.jpg" style="width: 500px;"/>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                    
+                    
+                    </div>
                 </div>
             </div>
             <div class="philosophy">
@@ -113,6 +296,8 @@
                     <img src="./Images//Designer.jpg" style="width: 600px; height: auto;" alt="designing" />
                 </div>
             </div>
+
+            <!--Carousel scrolling-->
             <div class="container">
                 <h6>My Services</h6> 
                     <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -122,36 +307,43 @@
                         <li data-target="#myCarousel" data-slide-to="2"></li>
                         <li data-target="#myCarousel" data-slide-to="3"></li>
                         <li data-target="#myCarousel" data-slide-to="4"></li>
+                        <li data-target="#myCarousel" data-slide-to="5"></li>
                       </ol>
                       <div class="carousel-inner" role="listbox">
                           <div class="item active">
-                          <img src="./Images/Carousel1.png" alt="Interior-design-sevice" width="100%" />
+                          <img src="./Images/Carousel1.png" alt="Interior-design-sevice" style="width: 100%; height: 100%;"/>
                           <div class="carousel-caption">
                             <h2>Hall Designing</h2>
                           </div>
                         </div>
                         <div class="item">
-                          <img src="./Images/Carousel2.jpg" alt="Interior-design-sevice-2" width="100%" />
+                          <img src="./Images/Carousel2.jpg" alt="Interior-design-sevice-2"  style="width: 100%; height: 100%;"/>
                           <div class="carousel-caption">
-                            <h2>Interior Stairs</h2>
+                            <h2>Coffee Table</h2>
                           </div>
                         </div>
                         <div class="item">
-                          <img src="./Images/Carousel3.jpg" alt="Interior-design-sevice-3" width="100%" />
+                          <img src="./Images/Carousel3.jpg" alt="Interior-design-sevice-3"  style="width: 100%; height: 100%;"/>
                           <div class="carousel-caption">
                             <h2>Bathroom Designing</h2>
                           </div>
                         </div>
                         <div class="item">
-                          <img src="./Images/Carousel4.jpg" alt="Interior-design-sevice-4" width="100%" />
+                          <img src="./Images/Carousel4.jpg" alt="Interior-design-sevice-4"  style="width: 100%; height: 100%;"/>
                           <div class="carousel-caption">
                             <h2>Wall Designing</h2>
                           </div>
                         </div>
                         <div class="item">
-                            <img src="./Images/Carousel5.jpg" alt="Interior-design-sevice-5" width="100%" />
+                            <img src="./Images/Carousel5.jpg" alt="Interior-design-sevice-5"  style="width: 100%; height: 100%;"/>
                             <div class="carousel-caption">
                               <h2>Ceiling Designing</h2>
+                            </div>
+                          </div>
+                          <div class="item">
+                            <img src="./Images/Carousel6.jpg" alt="Interior-design-sevice-6"  style="width: 100%; height: auto;"/>
+                            <div class="carousel-caption">
+                              <h2>Outdoor Kitchen</h2>
                             </div>
                           </div>
                       </div>
@@ -182,15 +374,16 @@
                   </form>
               </div>
                 <div class="social">
-                  <a href="#"><i class='fab fa-facebook-f' style='font-size:20px'></i></a>
-                  <a href="#"><i class="fab fa-twitter" style="font-size:20px"></i></a>
-                  <a href="#"><i class="fab fa-linkedin" style="font-size:20px"></i></a>
+                  <a href="www.facebook.com"><i class='fab fa-facebook-f' style='font-size:20px'></i></a>
+                  <a href="www.twitter.com"><i class="fab fa-twitter" style="font-size:20px"></i></a>
+                  <a href="www.linkedin.com"><i class="fab fa-linkedin" style="font-size:20px"></i></a>
                 </div>
                 <div class="rights">
                   <p>&copy; 2023 by Jessica Brooks.</p>
                 </div>
             </div>
       </div>
-    <script src="./Index.js"></script>
+      <!--External JavaScript-->
+    <script src="./JavaScript/Index.js"></script>
 </body>
 </html>
