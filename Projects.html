@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Projects</title>
+    <!-- Bootstrap plugin  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- fontawesome icons plugin -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <!-- External Stylesheet-->
+    <link rel="stylesheet" href="./CSS/Projects.css" />
+    <style>
+        
+    </style>
+</head>
+  <body>
+    <div class="container-fluid">
+      <div class="logo">
+        <header>
+          <h1>Jessica Brooks</h1>
+          <a href="./Index.html">Home Styling Design</a>
+        </header>
+        <nav>
+          <ul>
+            <li><a href="./Index.html">Home</a></li>
+            <li><a href="./Booking.html">Book Online</a></li>
+            <li><a href="./About.html">About</a></li>
+            <li><a href="./Contact.html">Contact</a></li>
+            <li>
+              <a href="./Login.html" class=""
+                ><i class="fas fa-user-circle" style="font-size: 24px"></i> Log
+                In</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="container">
+        <h1>Project 01</h1>
+        <h5>I'm a title. Click here to edit me.</h5>
+        <p>
+          I'm a paragraph. Click here to add your own text and edit me. It’s
+          easy. Just click “Edit Text” or double click me to add your own
+          content and <br />make changes to the font. I’m a great place for you
+          to tell a story and let your users know a little more about you.
+        </p>
+        <h6>All Projects</h6>
+      </div>
+
+      <!--Slideshow manually-->
+
+      <div class="slider">
+          <div class="w3-content w3-display-container" id="slideshow">
+              <img class="mySlides" src="./Images/Carousel1.png" alt="carousel1" style="width:100%"/>
+              <img class="mySlides" src="./Images/Carousel2.jpg" alt="carousel2" style="width:100%"/>
+              <img class="mySlides" src="./Images/Carousel3.jpg" alt="carousel3" style="width:100%"/>
+              <img class="mySlides" src="./Images/Carousel4.jpg" alt="carousel4" style="width:100%"/>
+
+              <button class="w3-button w3-display-left" onclick="slider(-1)">&#10094;</button>
+              <button class="w3-button w3-display-right" onclick="slider(1)">&#10095;</button>
+          </div>
+      </div>
+
+      <div class="footer">
+        <div class="social">
+            <a href="www.facebook.com"><i class='fab fa-facebook-f' style='font-size:20px'></i></a>
+            <a href="www.twitter.com"><i class="fab fa-twitter" style="font-size:20px"></i></a>
+            <a href="www.linkedin.com"><i class="fab fa-linkedin" style="font-size:20px"></i></a>
+          </div>
+          <div class="rights">
+            <p>&copy; 2023 by Jessica Brooks.</p>
+          </div>
+      </div>
+    </div>
+    <script src="./JavaScript/Project.js"></script>
+  </body>
+</html>
