@@ -1,0 +1,140 @@
+.container-fluid {
+  width: 100%;
+  height: auto;
+  font-family: helvetica;
+}
+.logo {
+  display: inline-flex;
+  padding: 2rem 2rem;
+  margin: 0.5rem 0.5rem;
+}
+.logo > header {
+  text-align: left;
+}
+.logo > header > h1 {
+  font-size: 22px;
+}
+.logo > header > a {
+  margin: 0px 2px;
+  font-size: 15px;
+  color: black;
+  text-decoration: underline;
+}
+.logo > nav {
+  position: absolute;
+  top: 3rem;
+  right: 40px;
+}
+.logo > nav > ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.logo > nav > ul > li {
+  align-self: center;
+  margin: 0.8rem 0.5rem;
+  list-style: none;
+}
+.logo > nav > ul > li > a {
+  color: black;
+  font-size: 15px;
+}
+.logo > nav > ul > li > a:hover {
+  text-decoration: none;
+}
+.container {
+  width: fit-content;
+  margin-top: 6rem;
+  padding: 1rem 1rem;
+  font-family: helvetica;
+}
+.container > h1 {
+  font-weight: bold;
+  margin-bottom: 50px;
+  font-family: helvetica;
+  font-size: 40px;
+}
+.container > h5 {
+  font-size: 17px;
+  margin-bottom: 3rem;
+}
+.container > p {
+  font-size: 14px;
+}
+.container > h6 {
+  margin-top: 40px;
+  font-size: 15px;
+  margin-bottom: 6rem;
+}
+.container > .slider {
+  width: 100%;
+  height: auto;
+}
+.slider > #slideshow > .mySlides {
+  display: none;
+}
+.slider > #slideshow > img:hover {
+  opacity: 0.8;
+}
+.slider > #slideshow > button {
+  font-size: 30px;
+  color: white;
+  font-weight: bolder;
+  background: black;
+}
+.slider > #slideshow > button:hover {
+  color: black;
+}
+
+.footer > .social {
+  padding: 20px 20px;
+  margin-top: 70px;
+  text-align: center;
+}
+.footer > .social > a {
+  color: black;
+  margin: 5px 10px;
+}
+.footer > .rights {
+  text-align: center;
+  padding: 10px 10px;
+  margin: 10px 10px;
+}
+
+.slider > #slideshow > .container > .image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.slider > #slideshow > .container > .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.3s ease;
+  background-color: transparent;
+}
+
+.slider > #slideshow > .container:hover .overlay {
+  opacity: 0.7;
+}
+
+.slider > #slideshow > .container > .icon {
+  color: white;
+  font-size: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.slider > #slideshow > .container > .fa-user:hover {
+  color: #eee;
+}
